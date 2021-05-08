@@ -1,0 +1,33 @@
+<!-- home.html -->
+
+    {% extends 'base.html' %}
+    {% block title %} Pages {% endblock %}
+    {% block content %}
+      <div class="row">
+
+        <div class="col-md-12">
+        <table class="table">
+        <thead>
+        <tr>
+            <th>Provider</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for page in pages %}
+        <tr>
+            <th>Facebook</th>
+            <th>{{ page.name }}</th>            
+            <td>{{ page.category }}</td>
+            <td>{{ page.id }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+      </div>
+       
+            <!-- End here access_token -->
+      </div>
+    {% endblock %}
