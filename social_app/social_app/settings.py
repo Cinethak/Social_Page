@@ -64,8 +64,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_django.context_processors.backends', # add this
-                'social_django.context_processors.login_redirect', # add this
+                'social_django.context_processors.backends', 
+                'social_django.context_processors.login_redirect', 
             ],
         },
     },
@@ -140,13 +140,13 @@ LOGIN_REDIRECT_URL = 'home2'
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '554488135515634'        # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '7a6b29179c21fb3a1ad72331cb74d150'  # App Secret
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link'] # add this
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       # add this
+SOCIAL_AUTH_FACEBOOK_KEY = 'Your_App_ID'        
+SOCIAL_AUTH_FACEBOOK_SECRET = 'Your_App_Secret_KEy'  
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link'] 
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       
   'fields': 'id, name, email, picture.type(large), link'
 }
-SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 # add this
+SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 
     ('name', 'name'),
     ('email', 'email'),
     ('picture', 'picture'),
